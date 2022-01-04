@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="index.js"></script>
+    <title>Hangman</title>
+  </head>
+  <body>
+    <div class="level">
+      <h1 class="level__h1 h1">What level do you want to play:</h1>
+      <div class="level__btn">
+        <button class="level__easy btn">Easy</button>
+        <button class="level__medium btn">Medium</button>
+        <button class="level__hard btn">Hard</button>
+      </div>
+    </div>
+    <div class="game hidden">
+      <div class="hangman__fig">
+        <h1 class="hangman__fig-7 hangman__fig-7--right-leg hidden"></h1>
+        <h1 class="hangman__fig-7 hangman__fig-7--left-leg hidden"></h1>
+        <h1 class="hangman__fig-7 hangman__fig-7--right hidden"></h1>
+        <h1 class="hangman__fig-7 hangman__fig-7--left hidden"></h1>
+        <h1 class="hangman__fig-6 hidden"></h1>
+        <h1 class="hangman__fig-5 hidden">o</h1>
+        <h1 class="hangman__fig-4-lt">|</h1>
+        <h1 class="hangman__fig-4">_____________</h1>
+        <h1 class="hangman__fig-3">/</h1>
+        <h1 class="hangman__fig-2"></h1>
+        <h1 class="hangman__fig-1">_____________________</h1>
+      </div>
+      <div class="word__guess">
+        <button class="btn btn__playagain hidden">Play Again</button>
+        <h1 class="word__guess--display">Finding a word...</h1>
+      </div>
+      <!-- <input type="text" class="guess" />
+      <button class="btn check">check</button> -->
+    </div>
+    <div class="keyboard hidden">
+      <h1 class="keyboard__key keyboard__key-a" id="a">A</h1>
+      <h1 class="keyboard__key keyboard__key-b" id="b">B</h1>
+      <h1 class="keyboard__key keyboard__key-c" id="c">C</h1>
+      <h1 class="keyboard__key keyboard__key-d" id="d">D</h1>
+      <h1 class="keyboard__key keyboard__key-e" id="e">E</h1>
+      <h1 class="keyboard__key keyboard__key-f" id="f">F</h1>
+      <h1 class="keyboard__key keyboard__key-g" id="g">G</h1>
+      <h1 class="keyboard__key keyboard__key-h" id="h">H</h1>
+      <h1 class="keyboard__key keyboard__key-i" id="i">I</h1>
+      <h1 class="keyboard__key keyboard__key-j" id="j">J</h1>
+      <h1 class="keyboard__key keyboard__key-k" id="k">K</h1>
+      <h1 class="keyboard__key keyboard__key-l" id="l">L</h1>
+      <h1 class="keyboard__key keyboard__key-m" id="m">M</h1>
+      <h1 class="keyboard__key keyboard__key-n" id="n">N</h1>
+      <h1 class="keyboard__key keyboard__key-o" id="o">O</h1>
+      <h1 class="keyboard__key keyboard__key-p" id="p">P</h1>
+      <h1 class="keyboard__key keyboard__key-q" id="q">Q</h1>
+      <h1 class="keyboard__key keyboard__key-r" id="r">R</h1>
+      <h1 class="keyboard__key keyboard__key-s" id="s">S</h1>
+      <h1 class="keyboard__key keyboard__key-t" id="t">T</h1>
+      <h1 class="keyboard__key keyboard__key-u" id="u">U</h1>
+      <h1 class="keyboard__key keyboard__key-v" id="v">V</h1>
+      <h1 class="keyboard__key keyboard__key-w" id="w">W</h1>
+      <h1 class="keyboard__key keyboard__key-x" id="x">X</h1>
+      <h1 class="keyboard__key keyboard__key-y" id="y">Y</h1>
+      <h1 class="keyboard__key keyboard__key-z" id="z">Z</h1>
+    </div>
+  </body>
+</html>
