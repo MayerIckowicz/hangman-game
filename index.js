@@ -58,7 +58,6 @@ const randWord = async function () {
       `http://api.wordnik.com/v4/words.json/randomWord?api_key=rq96j6kcsov15r5sgy7zhrzcszpk1s65kp8cvvv01jhckm0aj`,
       { hasDictionaryDef: "true" }
     );
-    //please don't steal my api key, you can get one free on this website
     const { word } = await response.json();
     console.log(word);
     const wordArr = [...word];
