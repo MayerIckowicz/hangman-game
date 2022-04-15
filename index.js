@@ -25,9 +25,9 @@ let lives = 6;
 let wrdChoosenLength = 8;
 
 const changeWrdLgn = (el) => {
-  if (el.path[0].classList.contains("level__easy")) {
+  if (el.target.classList.contains("level__easy")) {
     wrdChoosenLength = 6;
-  } else if (el.path[0].classList.contains("level__hard")) {
+  } else if (el.target.classList.contains("level__hard")) {
     wrdChoosenLength = 20;
   }
 };
