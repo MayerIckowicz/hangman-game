@@ -33,7 +33,6 @@ const changeWrdLgn = (el) => {
 };
 
 const goToGame = (el) => {
-  console.log(el.path[0]);
   changeWrdLgn(el);
   levelDiv.classList.add("hidden");
   game(wrdChoosenLength);
